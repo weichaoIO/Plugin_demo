@@ -1,6 +1,5 @@
 package io.weichao.plugin_demo.activity;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +8,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.io.File;
 import java.lang.reflect.Method;
 
@@ -16,7 +17,7 @@ import io.weichao.Message;
 import io.weichao.plugin_demo.R;
 import io.weichao.plugin_demo.util.LoadUtil;
 
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static final String PLUGIN_APK_PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "plugin-debug.apk";
 
     private View mBtn2;
