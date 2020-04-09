@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1、需要手动打开SD读取权限!\n2、build plugin后将生成的plugin-debug.apk文件放到SD根目录!"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="以插件化方式加载插件" />
+
+    <!--<Button
+        android:id="@+id/btn21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="以热修复方式加载插件" />-->
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证插件化的方法" />
+
+    <!--<Button
+        android:id="@+id/btn22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证热修复的方法" />-->
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证启动插件的 Activity" />
+</LinearLayout>
